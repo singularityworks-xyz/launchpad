@@ -79,6 +79,11 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={clashGrotesk.variable}>
 			<head>
+				<script
+					defer
+					src="https://analytics-umami.zephyyrr.in/script.js"
+					data-website-id="05b4638a-8f08-42df-9174-151f9de48eb6"
+				></script>
 				<style>{`
 html {
   font-family: ${GeistSans.style.fontFamily};
@@ -98,22 +103,6 @@ html {
 								"Where minimalism meets psychology. We craft digital experiences that create profound connections through purposeful simplicity.",
 							url: siteUrl,
 							logo: `${siteUrl}/favicon.ico`,
-						}),
-					}}
-				/>
-				<script
-					type="application/ld+json"
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify({
-							"@context": "https://schema.org",
-							"@type": "WebSite",
-							name: "Singularity Works",
-							url: siteUrl,
-							potentialAction: {
-								"@type": "SearchAction",
-								target: `${siteUrl}/search?q={search_term_string}`,
-								"query-input": "required name=search_term_string",
-							},
 						}),
 					}}
 				/>
