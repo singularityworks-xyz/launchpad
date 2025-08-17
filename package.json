@@ -1,25 +1,26 @@
 {
-	"name": "singularityworks",
-	"private": true,
-	"workspaces": [
-		"apps/*",
-		"packages/*"
-	],
-	"scripts": {
-		"check": "oxlint",
-		"dev": "turbo dev",
-		"update": "pnpm dlx taze -r",
-		"update:major": "pnpm dlx taze major -w",
-		"build": "turbo build",
-		"check-types": "turbo check-types",
-		"dev:native": "turbo -F native dev",
-		"dev:web": "turbo -F web dev",
-		"dev:server": "turbo -F server dev"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"oxlint": "^1.12.0",
-		"turbo": "^2.5.6"
-	},
-	"packageManager": "pnpm@10.14.0"
+  "name": "singularityworks",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "check": "oxlint",
+    "biome:check": "biome check . --fix .",
+    "biome:format": "biome format . --fix .",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.0",
+    "oxlint": "^1.12.0",
+    "turbo": "^2.5.6",
+    "ultracite": "5.2.4"
+  },
+  "packageManager": "pnpm@10.14.0"
 }

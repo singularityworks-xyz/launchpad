@@ -8,18 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "15.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "@orpc/client": "^1.8.1",
+    "@orpc/server": "^1.8.1",
     "dotenv": "^17.2.1",
-    "@orpc/server": "^1.5.0",
-    "@orpc/client": "^1.5.0"
+    "next": "15.3.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "zod": "^4.0.13",
-    "typescript": "^5",
-    "@types/bun": "^1.2.6"
+    "@types/bun": "^1.2.20",
+    "@types/node": "^20.19.11",
+    "@types/react": "^19.1.10",
+    "typescript": "^5.9.2",
+    "zod": "^4.0.17"
   }
 }
