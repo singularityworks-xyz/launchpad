@@ -37,17 +37,21 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		title: "Singularity Works — Minimalist digital experiences",
+		images: [
+			{ url: "/cs.png", width: 1200, height: 630, alt: "Singularity Works" },
+		],
+		title: "Singularity Works",
 		description:
-			"Where minimalism meets psychology. We craft digital experiences that create profound connections through purposeful simplicity.",
+			"We craft digital experiences that create profound connections through purposeful simplicity.",
 		url: siteUrl,
 		siteName: "Singularity Works",
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Singularity Works — Minimalist digital experiences",
+		images: ["/apple-touch-icon.png"],
+		title: "Singularity Works",
 		description:
-			"Where minimalism meets psychology. We craft digital experiences that create profound connections through purposeful simplicity.",
+			"We craft digital experiences that create profound connections through purposeful simplicity.",
 	},
 	robots: {
 		index: true,
