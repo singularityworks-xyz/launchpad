@@ -13,7 +13,7 @@ const clashGrotesk = Inter({
 });
 
 export const metadata: Metadata = {
-	title: "Singularity - Comming soon",
+	title: "Singularity - Coming soon",
 	description: "Singularity Works",
 };
 
