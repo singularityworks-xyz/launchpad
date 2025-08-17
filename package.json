@@ -1,26 +1,28 @@
 {
-  "name": "singularityworks",
-  "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "scripts": {
-    "check": "oxlint",
-    "biome:check": "biome check . --fix .",
-    "biome:format": "biome format . --fix .",
-    "dev": "turbo dev",
-    "build": "turbo build",
-    "check-types": "turbo check-types",
-    "dev:native": "turbo -F native dev",
-    "dev:web": "turbo -F web dev",
-    "dev:server": "turbo -F server dev"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.2.0",
-    "oxlint": "^1.12.0",
-    "turbo": "^2.5.6",
-    "ultracite": "5.2.4"
-  },
-  "packageManager": "pnpm@10.14.0"
+	"name": "launchpad",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev",
+		"lint": "next lint",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@paper-design/shaders-react": "latest",
+		"geist": "latest",
+		"next": "15.2.4",
+		"next-themes": "^0.4.4",
+		"react": "^19",
+		"tailwind-merge": "^2.5.5",
+		"tailwindcss-animate": "^1.0.7"
+	},
+	"devDependencies": {
+		"@types/node": "^22",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"postcss": "^8.5",
+		"tailwindcss": "^3.4.17",
+		"typescript": "^5"
+	}
 }
