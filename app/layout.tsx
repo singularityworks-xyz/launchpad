@@ -1,5 +1,5 @@
 import type React from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Inter } from "next/font/google";
@@ -18,7 +18,7 @@ const siteUrl =
 export const metadata: Metadata = {
 	metadataBase: new URL(siteUrl),
 	title: {
-		default: "Singularity Works — Minimalist digital experiences",
+		default: "Singularity Works — Minimalist experiences",
 		template: "%s | Singularity Works",
 	},
 	description:
@@ -67,12 +67,12 @@ export const metadata: Metadata = {
 	icons: {
 		icon: "/favicon.ico",
 	},
-	viewport: {
-		width: "device-width",
-		initialScale: 1,
-		maximumScale: 1,
-		viewportFit: "cover",
-	},
+};
+export const viewport: Viewport = {
+	width: "device-width",
+	initialScale: 1,
+	maximumScale: 1,
+	viewportFit: "cover",
 };
 
 export default function RootLayout({
