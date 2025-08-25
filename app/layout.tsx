@@ -110,6 +110,13 @@ html {
 						}),
 					}}
 				/>
+				<script
+				    src="https://tracking.zephyyrr.in/api/script.js"
+					data-session-replay="true"
+					data-track-errors="true"
+				    data-site-id="3"
+				    defer
+				></script>
 			</head>
 			<body>{children}</body>
 		</html>
