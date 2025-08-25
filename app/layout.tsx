@@ -83,19 +83,15 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={clashGrotesk.variable}>
 			<head>
-				<script
-					defer
-					src="https://analytics-umami.zephyyrr.in/script.js"
-					data-website-id="05b4638a-8f08-42df-9174-151f9de48eb6"
-				></script>
+				<script defer src="https://tracking.zephyyrr.in/script.js" data-website-id="adcb0e98-5ff6-4e89-94de-3a09552e51bf"></script>
 				<style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-  --font-clash: ${clashGrotesk.style.fontFamily};
-}
-        `}</style>
+					html {
+					  font-family: ${GeistSans.style.fontFamily};
+					  --font-sans: ${GeistSans.variable};
+					  --font-mono: ${GeistMono.variable};
+					  --font-clash: ${clashGrotesk.style.fontFamily};
+					}
+		        `}</style>
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
@@ -110,13 +106,6 @@ html {
 						}),
 					}}
 				/>
-				<script
-				    src="https://tracking.zephyyrr.in/api/script.js"
-					data-session-replay="true"
-					data-track-errors="true"
-				    data-site-id="3"
-				    defer
-				></script>
 			</head>
 			<body>{children}</body>
 		</html>
