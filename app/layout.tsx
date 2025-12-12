@@ -83,7 +83,6 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={clashGrotesk.variable}>
 			<head>
-				<script defer src="https://tracking.zephyyrr.in/script.js" data-website-id="adcb0e98-5ff6-4e89-94de-3a09552e51bf"></script>
 				<style>{`
 					html {
 					  font-family: ${GeistSans.style.fontFamily};
